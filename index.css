@@ -1,0 +1,198 @@
+
+        .navbar {
+            background-color: white;
+        }
+
+        .navbar-brand img {
+            max-height: 50px; 
+        }
+
+        .company-name {
+            font-size: 24px; 
+            text-align: center;
+            flex-grow: 1;
+        }
+      
+
+        /*second nav*/
+        /* Second Navigation Bar */
+        .navbar-secondary {
+          background-color: black;
+      }
+
+      .navbar-secondary .navbar-nav {
+          justify-content: center;
+      }
+
+      .navbar-secondary .nav-item {
+          margin: 0 10px; 
+      }
+
+      .navbar-secondary .nav-link {
+          color: white;
+      }
+
+      /* slide show  */
+      /* slider code*/
+.slideshow{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url(https://img.freepik.com/free-photo/building-glass-entrance_1127-3190.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: bgChange 20s linear infinite;
+}
+@keyframes bgChange{
+  0%{
+      background-image: url(https://img.freepik.com/free-photo/building-glass-entrance_1127-3190.jpg?size=626&ext=jpg);
+  }
+  20%{
+      background-image: url(https://img.freepik.com/free-photo/building-glass-entrance_1127-3190.jpg?size=626&ext=jpg);
+  }
+  25%{
+      background-image: url(https://img.freepik.com/free-photo/white-hallway-with-glass-doors-metal-ceiling-modern-building_181624-7177.jpg?size=626&ext=jpg&ga=GA1.1.1864554487.1694678984&semt=ais); 
+  }
+  45%{
+      background-image: url(https://img.freepik.com/free-photo/white-hallway-with-glass-doors-metal-ceiling-modern-building_181624-7177.jpg?size=626&ext=jpg&ga=GA1.1.1864554487.1694678984&semt=ais)
+  }
+  50%{
+      background-image: url(https://img.freepik.com/premium-photo/corridor-with-window-dining-room_305343-27193.jpg?size=626&ext=jpg&ga=GA1.1.1864554487.1694678984&semt=ais)
+  }
+  70%{
+      background-image: url(https://img.freepik.com/premium-photo/corridor-with-window-dining-room_305343-27193.jpg?size=626&ext=jpg&ga=GA1.1.1864554487.1694678984&semt=ais);
+  }
+  75%{
+      background-image: url(https://img.freepik.com/premium-photo/modern-metal-yellow-door-entryway-house-generative-ai_634358-686.jpg?size=626&ext=jpg&ga=GA1.1.1864554487.1694678984&semt=ais);
+  }
+  95%{
+      background-image: url(https://img.freepik.com/free-photo/building-glass-entrance_1127-3190.jpg?size=626&ext=jpg);
+  }
+
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+.content{
+  position: relative;
+  width: 100%;
+  height: 100;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.content h1{
+  font-size:60px ;
+  margin-bottom: 0px;
+}
+.content h1{
+  color: azure;
+}
+.content p{
+  font-size: 30px;
+  width: 60%;
+  padding-top: 110px;
+  text-align: center;
+  
+}
+.content button{
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: cadetblue;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  transition: .5s;
+}
+#Btn{
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      color: white;
+}
+.content button:hover{
+  background-color: cadetblue;
+}
+
+/* review */
+/*Testimonials below*/
+
+.testimonials {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  margin-bottom: 30px;
+  
+}
+.testimonial p {
+  font-size: 25px;
+  margin: 0;
+}
+.author {
+  font-style: italic;
+  color: #888;
+}
+  /* footer  */
+#svg-logo {
+  width: 50px; 
+  height: 50px; 
+}
+
+#svg-icon {
+  width: 30px; 
+  height: 30px; 
+}
+
+.navbar-nav a:hover {
+  color: cadetblue;
+  transform: scale(1.1); 
+  transition: transform 0.3s; 
+}
+navbar-nav a {
+  position: relative;
+  text-decoration: none;
+  color: black; 
+  transition: color 0.3s;
+}
+
+.navbar-nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; 
+  bottom: 0;
+  left: 0;
+  background-color: transparent; 
+  transition: background-color 0.0s;
+}
+
+.navbar-nav a:hover {
+  color: black; 
+}
+
+.navbar-nav a:hover::after {
+  background-color:white; 
+}
+body{
+
+  background-color: #d9d9d9;
+}
+
+      

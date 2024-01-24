@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Frames</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+    <link rel="stylesheet" href="idea.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logopicSVG.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      #backToTopButton {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+      transition: opacity 0.4s;
+      }
+
+      #scrollProgress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: #007bff; 
+      z-index: 9999;
+      transition: width 0.2s;
+      }
+ </style>
+   <style>
+    .navbar-nav .active .nav-link {
+      color: cyan; 
+    }
+    </style>
+
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand mr-auto" href="index1.html">
+            <img src="logopicSVG.svg" alt="Logo">
+          </a>
+          <span class="company-name">SBU-Aluminum</span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      
+      
+      <nav class="navbar navbar-expand-lg navbar-secondary" id="second-navbar">
+        <div class="container">
+        
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index1.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="companyinfo.html">About</a></li>
+              <li class="nav-item active "><a class="nav-link" href="Catagory.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="form2.html">Get Quote</a></li>
+              <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <main class="main">
+        <!-- <div class="container"> -->
+        <div class="container-box">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1537199322506-85bfd51c0601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D1" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1537199322506-85bfd51c0601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1611542088644-ca501c5653c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGRvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D2" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1611542088644-ca501c5653c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGRvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1522032742099-c80d5fdf1d8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGFsdW1pbml1bSUyMGRvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D3" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1522032742099-c80d5fdf1d8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGFsdW1pbml1bSUyMGRvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1519999933293-fb5e79c3e9b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ2fHxkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D4" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1519999933293-fb5e79c3e9b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ2fHxkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1587813369210-4ce93b19bcfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU1fHxkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D5" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1587813369210-4ce93b19bcfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU1fHxkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://plus.unsplash.com/premium_photo-1682432328541-82e613e3b540?ixlib=rb-4.0.3&ixid
+              =M3wxMjA3fDB8MHxzZWFyY2h8MTYwfHxkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D6" data-width="2400" data-height="1600">
+                <img src="https://plus.unsplash.com/premium_photo-1682432328541-82e613e3b540?ixlib=rb-4.0.3&ixid
+                =M3wxMjA3fDB8MHxzZWFyY2h8MTYwfHxkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1625251790636-b8cb6fae0dc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8
+              fGNvbXBhbnklMjBvZmZpY2UlMjBkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D7" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1625251790636-b8cb6fae0dc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8
+                fGNvbXBhbnklMjBvZmZpY2UlMjBkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1625461873576-ce38861ca2b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbXBhbnk
+              lMjBvZmZpY2UlMjBkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" data-fancybox="gallery" data-caption="Code: D8" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1625461873576-ce38861ca2b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbXBhbnk
+                lMjBvZmZpY2UlMjBkb29yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="https://images.unsplash.com/photo-1521352757389-8e5cb54edd68?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWx1bWluaXVtJTIwd2luZG93fGVufDB8fDB8fHww" class="d-block w-100" data-fancybox="gallery" data-caption="Code: D9" data-width="2400" data-height="1600">
+                <img src="https://images.unsplash.com/photo-1521352757389-8e5cb54edd68?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWx1bWluaXVtJTIwd2luZG93fGVufDB8fDB8fHww" class="d-block w-100" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+        </div>
+  </main>
+
+  <button id="backToTopButton" class="btn btn-primary">Back to Top</button>
+  <!-- <div id="scrollProgress"></div> -->
+  <script>
+    const button = document.getElementById("backToTopButton");
+    // const progressBar = document.getElementById("scrollProgress");
+
+    // Function to update the progress bar
+    // function updateProgressBar() {
+    //   const scrollPosition = window.scrollY;
+    //   const pageHeight = document.body.scrollHeight - window.innerHeight;
+    //   const progress = (scrollPosition / pageHeight) * 100;
+    //   progressBar.style.width = `${progress}%`;
+    // }
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 100) {
+        button.style.display = "block";
+        button.style.opacity = "1";
+      } else {
+        button.style.display = "none";
+        button.style.opacity = "0";
+      }
+
+      // updateProgressBar();
+    });
+
+    button.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+  </script>
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+      <script src="idea.js"></script>
+      <script src="index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="backtotop.js"></script>
+
+</body>
+ <!-- footer boothstrap -->
+ <footer class="bg-dark text-white py-4">
+  <div class="fluid-container">
+      <div class="row">
+          <div class="col-md-3">
+              <img id="svg-logo"  src="logopicSVG.svg" alt="Footer Logo" class="img-fluid">
+          </div>
+          <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="index1.html" class="text-white">Home</a></li>
+                  <li><a href="companyinfo.html" class="text-white">About</a></li>
+                  <li><a href="Catagory.html" class="text-white">Gallery</a></li>
+                  <li><a href="form2.html" class="text-white">Get Quote</a></li>
+                  <li><a href="Contactus.html" class="text-white">Contact</a></li>
+                  <li><a href="FAQ.html" class="text-white">FAQ</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <h5>Contact Information</h5>
+              <address class="text-white">
+                  <p>Click on the address link</p>
+                  <a href="https://www.google.com/maps/place/123+Phuthi+St,+Tswelopele,+Tembisa,+1632" target="_blank" class="text-white">
+                      123 Phuthi St, Tswelopele,<br> Tembisa, 1632
+                  </a>
+              </address>
+              <p class="text-white">Cell: 0123456789</p>
+              <p class="text-white">Email: <a href="mailto:sbualuminium@gmail.com" class="text-white">Sbualuminium@gmail.com</a></p>
+          </div>
+          <div class="col-md-3">
+              <h5>Follow Us</h5>
+              <a href="https://www.facebook.com/SbuAluminiums/" class="text-white mr-3"><img id="svg-icon"   src="square-facebook.svg" alt="Facebook"></a>
+              <a href="https://twitter.com/SbuAluminium" class="text-white mr-3"><img id="svg-icon"   src="x-twitter.svg" alt="Twitter"></a>
+              <a href="https://www.instagram.com/sbaluminum/reels/?next=%2Fazzahradental%2F&hl=en" class="text-white"><img  id="svg-icon"   src="instagram.svg" alt="Instagram"></a>
+          </div>
+      </div>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,28 @@
+desc{
+    background-color: white ;
+    
+    }
+  
+    .Display{
+      display: flex;
+        margin-left: 150px;
+    }
+  
+    .wrap img{
+      width: 300px;
+        height: 350px;
+    }
+  
+    .Display1{
+     display: flex;
+     padding:5px;
+     margin: 5px;
+    }
+    H2{
+      text-align: center;
+      background-color: #D6CCC2;
+    }
+  
+    .Display1 {
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
+      margin: 10px; /* Optional: Add some margin for spacing */}

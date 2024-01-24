@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form submission</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+   </script>
+
+  <script type="text/javascript">
+      (function () {
+        emailjs.init("1wy6pF3eTGrMbS9uV");
+      })();
+  </script>
+
+  <script>
+    function toggleLocationDropdown() {
+        const locationDropdown = document.getElementById("location");
+        locationDropdown.style.display = "block"; 
+    }
+  </script>
+  <link rel="stylesheet" href="form2.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand mr-auto" href="index1.html">
+        <img src="logopicSVG.svg" alt="Logo">
+      </a>
+      <span class="company-name">SBU-Aluminum</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-secondary" id="second-navbar">
+    <div class="container">
+     
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index1.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="companyinfo.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Catagory.html">Gallery</a></li>
+          <li class="nav-item active"><a class="nav-link" href="form2.html">Get Quote</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--form below -->
+        <div class="form2 form-border">
+          <div class="container">
+            <div class="check">
+                
+                <h1>Quote Form</h1>
+          
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" placeholder="Full Name" required pattern="[A-Za-z ]+"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Email" required><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" placeholder="Phone Number" name="phone" required pattern="[0-9]{10}"><br>
+                
+                <label for="location">Location:</label><br>
+                <select name="Location" id="location" ><br><br>
+                  <option></option>
+                    <option>Braam</option>
+                    <option>Soweto</option>
+                    <option>Twatwa</option>
+                    <option>Tembisa</option>
+                </select><br>
+
+                <label for="message">Message:</label><br>
+                <textarea name="Message" id="message" cols="20" rows="4" placeholder="Message" required></textarea><br>
+                <button onclick="sendMail()">Send</button>
+            </div>   
+        </div>
+    </div>
+  
+
+  <script src="index.js"></script>
+  <script src="form2.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+ 
+  <!-- footer boothstrap -->
+  <footer class="bg-dark text-white py-4">
+    <div class="fluid-container">
+        <div class="row">
+            <div class="col-md-3">
+                <img id="svg-logo"  src="logopicSVG.svg" alt="Footer Logo" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index1.html" class="text-white">Home</a></li>
+                    <li><a href="companyinfo.html" class="text-white">About</a></li>
+                    <li><a href="Catagory.html" class="text-white">Gallery</a></li>
+                    <li><a href="form2.html" class="text-white">Get Quote</a></li>
+                    <li><a href="Contactus.html" class="text-white">Contact</a></li>
+                    <li><a href="FAQ.html" class="text-white">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact Information</h5>
+                <address class="text-white">
+                    <p>Click on the address link</p>
+                    <a href="https://www.google.com/maps/place/123+Phuthi+St,+Tswelopele,+Tembisa,+1632" target="_blank" class="text-white">
+                        123 Phuthi St, Tswelopele,<br> Tembisa, 1632
+                    </a>
+                </address>
+                <p class="text-white">Cell: 0123456789</p>
+                <p class="text-white">Email: <a href="mailto:sbualuminium@gmail.com" class="text-white">Sbualuminium@gmail.com</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com/SbuAluminiums/" class="text-white mr-3"><img id="svg-icon"   src="square-facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com/SbuAluminium" class="text-white mr-3"><img id="svg-icon"   src="x-twitter.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/sbaluminum/reels/?next=%2Fazzahradental%2F&hl=en" class="text-white"><img  id="svg-icon"   src="instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+</html>

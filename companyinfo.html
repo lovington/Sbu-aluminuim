@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <title>about!</title>
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/companyinfo.css">
+     <link rel="icon" href="logopicSVG.svg">
+     <style>
+          body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: lightgray;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1;
+    opacity: 0;
+    animation: slide 2s forwards;
+    
+        /* border: 12px solid #B22222;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px; */
+        
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+}
+
+h2 {
+    font-size: 30px;
+    color: darkcyan;
+}
+
+/* Keyframes for sliding in the images */
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+/* Specific styles for the mission image */
+.mission .image-container {
+    order: 1;
+}
+
+/* Specific styles for the company description image */
+.company-description .image-container {
+    order: 2;
+}
+
+/* Responsive styles for mobile screen*/
+@media screen and (max-width: 600px) {
+    .image-container img {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .text-container {
+        flex: 1;
+        font-size: 12px;
+    }
+    
+}
+
+  /* Define a custom CSS class for the active item */
+  .navbar-nav .active .nav-link {
+    color: cyan; /* Change this to your desired color */
+  }
+     </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand mr-auto" href="index.html">
+        <img src="logopicSVG.svg" alt="Logo">
+      </a>
+  <span class="company-name">SBU-Aluminum</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+   
+  <nav class="navbar navbar-expand-lg navbar-secondary" id="second-navbar">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto"> 
+          <li class="nav-item"><a class="nav-link" href="index1.html">Home</a></li>
+          <li class="nav-item active "><a class="nav-link" href="companyinfo.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Catagory.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="form2.html">Get Quote</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   
+  <div class="container">
+    <div class="section">
+        <div class="image-container vision">
+            <img src="company.jpeg" alt="Company Description Image">
+        </div>
+        <div class="text-container">
+            <h2>Company Description</h2>
+            <p> Sbu aluminum is a trusted provider of high-quality window frames, door frames, and aluminum gates for residential, commercial, and industrial applications in the East Rand. Established in 2015, we have been serving our customers with excellence for 8 years. We are based in Tembisa.
+            </p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text-container">
+            <h2>Mission</h2>
+            <p>To provide our customers with high-end window frames and door frames that enhance the beauty and security of their spaces. We are committed to excellence, sustainability, and customer satisfaction. Through our innovation, quality craftsmanship, and outstanding services, we aim to be the trusted partner for all architectural and construction needs.</p>
+        </div>
+        <div class="image-container mission">
+            <img src="mission.jpeg" alt="Mission Image">
+        </div>
+        
+    </div>
+    <div class="section">
+        <div class="image-container">
+            <img src="vision.jpg" alt="Vision Image">
+        </div>
+        <div class="text-container company-description">
+            <h2>Vision</h2>
+            <p>To be leaders in the aluminum window and door frame industry and be known for our commitment to quality, innovation, and sustainability. Our vision is to inspire and empower communities through beautiful, secure, and environmentally responsible solutions.
+                </p>
+        </div>
+</div>
+
+</main>
+</div>
+<!-- footer boothstrap -->
+<footer class="bg-dark text-white py-4">
+    <div class="fluid-container">
+        <div class="row">
+            <div class="col-md-3">
+                <img id="svg-logo"  src="logopicSVG.svg" alt="Footer Logo" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index1.html" class="text-white">Home</a></li>
+                    <li><a href="companyinfo.html" class="text-white">About</a></li>
+                    <li><a href="Catagory.html" class="text-white">Gallery</a></li>
+                    <li><a href="form2.html" class="text-white">Get Quote</a></li>
+                    <li><a href="Contactus.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact Information</h5>
+                <address class="text-white">
+                    <p>Click on the address link</p>
+                    <a href="https://www.google.com/maps/place/123+Phuthi+St,+Tswelopele,+Tembisa,+1632" target="_blank" class="text-white">
+                        123 Phuthi St, Tswelopele,<br> Tembisa, 1632
+                    </a>
+                </address>
+                <p class="text-white">Cell: 0123456789</p>
+                <p class="text-white">Email: <a href="mailto:sbualuminium@gmail.com" class="text-white">Sbualuminium@gmail.com</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com/SbuAluminiums/" class="text-white mr-3"><img id="svg-icon"   src="square-facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com/SbuAluminium" class="text-white mr-3"><img id="svg-icon"   src="x-twitter.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/sbaluminum/reels/?next=%2Fazzahradental%2F&hl=en" class="text-white"><img  id="svg-icon"   src="instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div><script src="index.js"></script></div>
+
+</body>
+</html>

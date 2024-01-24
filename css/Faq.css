@@ -1,0 +1,91 @@
+
+
+  .custom-red-border {
+    border: 1px solid red;
+  }
+
+  .custom-blue-border {
+    border: 1px solid skyblue;
+  }
+
+  /* .centered-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+
+  .Display1 {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
+    margin: 10px; /* Optional: Add some margin for spacing */}
+
+    #accordion {
+     background-color: red;
+      background-size: cover; /* This ensures the background image covers the entire container */
+      background-repeat: no-repeat; /* Prevents the background image from repeating */
+      background-position: center center; /* Centers the background image horizontally and vertically */}
+
+      .faq-section {
+       background-image: url(Multiple-hung-windows.jpg); /* Replace with your desired background color */
+        /* You can also use ba  ckground-image property to set a background image */
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image: url(Multiple-hung-windows.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+  
+  .faq-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff ;
+      /* opacity: 0.80; */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+  }
+  .faq-item {
+      background-color: rgba(255, 254, 254, 0.9); 
+      margin-bottom: 10px;
+      padding: 5px;
+      border-radius: 8px;
+  }
+  .question {
+      margin: 0;
+      padding: 10px;
+      background-color: darkslategray;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+  }
+  .answer {
+      padding: 5px;
+      background-color: darkgrey;
+      /* display: none; */
+  }
+  
+  /* Responsive styles for mobile screen*/
+  @media screen and (max-width: 600px) {
+      .faq-container {
+          padding: 10px;
+      }
+  
+      .question {
+          font-size: 14px;
+      }
+      .answer{
+          font-size: 12px;
+      }
+  }
+  

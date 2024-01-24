@@ -1,0 +1,17 @@
+ /* body {
+    background-image: url('(https://img.freepik.com/premium-photo/blur-background-empty-modern-office-background-city-center-workspace-interior-design_31965-73058.jpg?size=626&ext=jpg&ga=GA1.2.1644964127.1695724525&semt=ais);');  Replace 'your-background-image.jpg' with your image file path 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling 
+    background-position: center center;
+}  */
+
+
+#container-with-background {
+    background-image: url(https://img.freepik.com/premium-photo/blur-background-empty-modern-office-background-city-center-workspace-interior-design_31965-73058.jpg?size=626&ext=jpg&ga=GA1.2.1644964127.1695724525&semt=ais);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+    background-position: center center;
+    padding: 20px; /* Optional: Add padding for spacing between the background image and content */
+}

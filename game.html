@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memmory Game</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<!-- <script defer src="game.js"></script> -->
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  .head {
+    max-width: 480px;
+    border: 2px solid #a6a6a6;
+    margin: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: "Orbitron", sans-serif;
+    color: #333;
+  }
+  
+  .score {
+    margin-top: 10px;
+  }
+  
+  .container {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .cell div {
+    height: 130px;
+    border-radius: 4px;
+  }
+  
+  .cell {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a6a6a6;
+    background-color: #f2f2f2;
+    transform: rotateY(90deg);
+  }
+  
+  .back {
+    background-color: #333;
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .flip {
+    transform: rotateY(0deg);
+  }
+  .match {
+    transform: rotateY(0deg);
+  }
+  
+  .show {
+    transform: rotateY(0deg);
+  }
+  
+  @media screen and (min-width: 770px) {
+    .head {
+      max-width: 760px;
+    }
+  
+    .container {
+      grid-template-columns: repeat(4, auto);
+    }
+  
+    .cell div {
+      height: 170px;
+    }
+  }
+</style>
+</head>
+<body>
+    <div class="head">
+        <h2>Memory Game</h2>
+        <div class="score">Score: <span>0</span></div>
+        <div id="timer">Time: 0s</div>
+    </div>
+
+    <div class="container">
+        <div class="cell">
+            <div class="front" data-index="1"><img src="https://img.freepik.com/free-photo/glass-window-overlooking-green-garden_1232-2979.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="1"><img src="https://img.freepik.com/free-photo/glass-window-overlooking-green-garden_1232-2979.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="2"><img src="https://img.freepik.com/free-photo/modern-elegant-living-room-with-fireplace_23-2148238577.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="2"><img src="https://img.freepik.com/free-photo/modern-elegant-living-room-with-fireplace_23-2148238577.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="3"><img src="https://img.freepik.com/premium-photo/professional-handyman-installing-window-home_255667-10187.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="3"><img src="https://img.freepik.com/premium-photo/professional-handyman-installing-window-home_255667-10187.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="4"><img src="https://img.freepik.com/free-vector/isometric-pvc-windows-frame-elements_1284-32523.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="4"><img src="https://img.freepik.com/free-vector/isometric-pvc-windows-frame-elements_1284-32523.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="5"><img src="https://img.freepik.com/premium-photo/beautiful-dark-blue-aluminium-windows-with-tinted-glasses-generative-ai_124507-78766.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="5"><img src="https://img.freepik.com/premium-photo/beautiful-dark-blue-aluminium-windows-with-tinted-glasses-generative-ai_124507-78766.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="6"><img src="https://img.freepik.com/free-photo/building-glass-entrance_1127-3190.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+        <div class="cell">
+            <div class="front" data-index="6"><img src="https://img.freepik.com/free-photo/building-glass-entrance_1127-3190.jpg?size=626&ext=jpg&ga=GA1.1.1735652783.1694504578&semt=ais" alt=""></div>
+            <div class="back"></div>
+        </div>
+    </div>
+
+    <script>
+        const card = document.querySelectorAll('.cell')
+        const front = document.querySelectorAll('.front')
+        const container = document.querySelector('.container')
+        const score = document.querySelector('.score span')
+        const timerElement = document.getElementById('timer')
+
+        let flippedCards = []
+        let matchedPairs = 0
+        let gameStarted = false
+        let timerInterval
+
+        suffleImage()
+        clicking()
+
+        function suffleImage() {
+            card.forEach(c => {
+                const num = [...Array(card.length).keys()]
+                const random = Math.floor(Math.random() * card.length)
+                c.style.order = num[random]
+            })
+        }
+
+        function startTimer() {
+            let seconds = 0
+            timerInterval = setInterval(() => {
+                seconds++
+                timerElement.textContent = `Time: ${seconds}s`
+            }, 500)
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval)
+        }
+
+        function clicking() {
+            for (let i = 0; i < card.length; i++) {
+                front[i].classList.add('show')
+                setTimeout(() => {
+                    front[i].classList.remove('show')
+                    if (i === card.length - 1) {
+                        gameStarted = true
+                        startTimer()
+                    }
+                }, 1000);
+
+                card[i].addEventListener('click', () => {
+                    if (!gameStarted) return
+
+                    if (!front[i].classList.contains('flip') && flippedCards.length < 2) {
+                        front[i].classList.add('flip')
+                        flippedCards.push(front[i])
+
+                        if (flippedCards.length === 2) {
+                            container.style.pointerEvents = 'none'
+                            setTimeout(() => {
+                                container.style.pointerEvents = 'all'
+                                match(flippedCards[0], flippedCards[1])
+                                flippedCards = []
+                            }, 500)
+                        }
+                    }
+                })
+            }
+        }
+
+        function match(cardOne, cardTwo) {
+            if (cardOne.dataset.index === cardTwo.dataset.index) {
+                score.innerHTML = parseInt(score.innerHTML) + 1
+
+                cardOne.classList.remove('flip')
+                cardTwo.classList.remove('flip')
+
+                cardOne.classList.add('match')
+                cardTwo.classList.add('match')
+
+                matchedPairs++
+                if (matchedPairs === card.length / 2) {
+                    stopTimer()
+                    showCongratulatoryAlert()
+                }
+            } else {
+                setTimeout(() => {
+                    cardOne.classList.remove('flip')
+                    cardTwo.classList.remove('flip')
+                }, 500);
+            }
+        }
+
+        function showCongratulatoryAlert() {
+            alert("Congratulations! You've completed the game in " + timerElement.textContent);
+        }
+
+        function resetGame() {
+            clearInterval(timerInterval);
+
+            card.forEach(c => {
+                c.classList.remove('flip', 'match');
+            });
+
+            suffleImage();
+            clicking();
+
+            gameStarted = false;
+            flippedCards = [];
+            matchedPairs = 0;
+
+            timerElement.textContent = 'Time: 0s';
+            score.textContent = '0';
+        }
+
+        function showCongratulatoryAlert() {
+            alert("Congratulations! You've completed the game in " + timerElement.textContent);
+            resetGame();
+        }
+        
+    </script>
+</body>
+</html>

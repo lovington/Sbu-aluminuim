@@ -1,0 +1,146 @@
+desc{
+    background-color: white ;
+    
+    }
+  
+    .Display{
+      display: flex;
+        margin-left: 150px;
+    }
+  
+    .wrap img{
+      width: 300px;
+        height: 350px;
+    }
+  
+    .Display1{
+     display: flex;
+     padding:5px;
+     margin: 5px;
+    }
+    H2{
+      text-align: center;
+      background-color: #D6CCC2;
+    }
+
+    .wrap{
+      margin-left: 0px;
+    }
+   
+
+
+
+    /* Basic styles for desktop */
+    /* .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .Display {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .Display1 {
+      padding: 5px;
+      margin: 5px;
+  }
+
+  .Display1 img {
+      width: 300px;
+      height: 350px;
+  } */
+
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+      .wrap {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .Display {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .Display1 img {
+          width: 100%;
+          height: auto;
+          max-width: 300px;
+          max-height: 350px;
+      }
+  }
+  
+
+  .Display1 {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
+    margin: 10px; /* Optional: Add some margin for spacing */}
+     
+     body{
+      overflow-x: hidden;
+     }
+
+     .flip-card {
+      width: 100%;
+      height: 100%;
+      perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .flip-card-front {
+      background: white;
+  }
+  
+  .flip-card-back {
+      background: white;
+      transform: rotateY(180deg);
+  }
+  
+  .text {
+      text-align: center;
+  }
+  
+  .text p {
+      color: black;
+      font-size: 18px;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px; 
+    left: 20px;   
+    display: none;
+    z-index: 99;
+  }
+
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+     
